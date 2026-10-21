@@ -373,39 +373,35 @@ let num;
 // console.log(numbers[3] * 2) // 4* 2 -> 8
 // console.log(numbers[4] * 2) // 5* 2 -> 10
 
+// only multiple top 5 items in list
 
+// let factor = 2;
+// let lengthOfNumbers = 10;
+// let numbers = [];
 
-// only multiple top 5 items in list 
+// // greater then equal to
+// for (let i = 1; i <= 10; i++) {
+//   // Itr 1 ->  i = 1
+//   // Itr 2 ->  i = 2
+//   // Itr 3 ->  i = 3
+//   console.log(`Index ${i}`)
+//   numbers[i - 1] = i;
+// }
 
-let factor = 2;
-let lengthOfNumbers = 10;
-let numbers = [];
+// console.log(numbers);
 
-// greater then equal to
-for (let i = 1; i <= 10; i++) {
-  // Itr 1 ->  i = 1
-  // Itr 2 ->  i = 2
-  // Itr 3 ->  i = 3
-  console.log(`Index ${i}`)
-  numbers[i - 1] = i;
-}
+// for (let j = 0; j <= numbers.length - 1; j++) {
+//   // Itr 1 => number[0] * 2 -> 2
+//   // Itr 2 => number[1] * 2 -> 4
+//   // Itr 3 => number[2] * 2 -> 6
+//   // , numbers[j] * 2
+//   if(j <= 4) {
+//     console.log(`Index ${j}  item  ${numbers[j]} =>`,  numbers[j] * 2); // 10 time
+//     break
+//   }
 
-console.log(numbers);
-
-for (let j = 0; j <= numbers.length - 1; j++) {
-  // Itr 1 => number[0] * 2 -> 2
-  // Itr 2 => number[1] * 2 -> 4
-  // Itr 3 => number[2] * 2 -> 6
-  // , numbers[j] * 2
-  if(j <= 4) {
-    console.log(`Index ${j}  item  ${numbers[j]} =>`,  numbers[j] * 2); // 10 time
-    break
-  }
-
-
-  console.log("jkjkj")
-}
-
+//   console.log("jkjkj")
+// }
 
 // let arr = [1, "a" , true, null]
 
@@ -417,7 +413,6 @@ for (let j = 0; j <= numbers.length - 1; j++) {
 //   [1,2,3,4,5], // 3
 // ] // 4
 
-
 // // nested for loop
 // for(let i = 0 ; i <= arr.length -1 ; i++) {
 //   let item = arr[i]
@@ -427,4 +422,163 @@ for (let j = 0; j <= numbers.length - 1; j++) {
 //   }
 // }
 
+// let arrr = [1,2,3,4,5] ; //Array of numbers
+// let arr2 = ["a", "b"]; // Array of strings
+// let arr = [true, false] // Array of booleans
 
+// let arr = [1, "a" , true]
+
+// let arr = [1, 2, 3, 4];
+// // arr[2] = 5
+// // arr[4] = 10
+// // arr[6] = 10
+// // console.log("Mutated Array =>", arr)
+// // // 1,2,5,4
+
+// arr.push(12) // 1,2,3,4,12
+// arr.push(24) //  1,2,3,4,12, 24
+
+// arr.pop()
+// arr.pop()
+// arr.pop()
+// arr.pop()
+// arr.pop()
+// arr.pop()
+// console.log(arr)
+
+// Array 2 index value update
+// arr.splice(1)
+// arr.splice(0)
+// arr.splice(1,2)
+// console.log(arr)
+
+// Array any index par item ko insert
+// let arr1 = ["apple", "banana", "pineapple"];
+// length, push, pop, splice
+
+// let arr2 = new Array(10).fill(12)
+// // let arr2 = new Array(1,2,3,4)
+// console.log("Contructor method array" , arr2)
+// let students = new Array(100) // [empty*100]
+
+// let updatedStudents = students
+// updatedStudents.fill(1)
+
+// console.log(students)
+// console.log(updatedStudents)
+
+// let multipleValues = [1,"string" , true]
+// console.log(typeof multipleValues) // object
+// console.log(typeof multipleValues[1])
+// console.log(typeof multipleValues[2])
+
+// let students = ["raja" , "muhammad" , "ehsan"]
+// console.log(students)
+// students[1] = "hazala"
+// console.log(students)
+// console.log("Length of arr", students.length)
+
+// let studNames = ["raja" , "hanzala" , "faruikh"]
+// let studAges = [27, 34, 45]
+
+// An object in JS is a combination of key:values pairs
+// let student1 = {
+//     // key : value
+//     name : "raja",
+//     age : 27,
+//     fName : "ehsan",
+//     class : 12
+// }
+// let student2 = {
+//     // key : value
+//     name : "raja",
+//     age : 27,
+//     fName : "ehsan",
+//     class : 12
+// }
+// let student3 = {
+//     // key : value
+//     name : "raja",
+//     age : 27,
+//     fName : "ehsan",
+//     class : 12
+// }
+
+// let students = [student1, student2, student3]
+// console.log(students[1].name)
+
+let students = [
+  {
+    name: "student 1",
+    age: 27,
+    class: 12,
+  },
+  {
+    name: "student 2",
+    age: 27,
+    class: 12,
+  },
+  {
+    name: "student 3",
+    age: 27,
+    class: 12,
+  },
+  {
+    name: "student 4",
+    age: 27,
+    class: 12,
+  },
+];
+
+// let stud = students[0]
+// // console.log(stud.name, typeof stud)
+
+
+
+// // Destructuring
+// const {name, age, class} = stud
+
+
+// Structuring
+// let student = {
+//     name : "raja",
+//     age : 24,
+//     isAlive: false
+// }
+
+// // Destructuring
+// // LHS = RHS
+
+// let {name, age, isAlive} = student
+// name = "ehsan"
+
+// console.log(student)
+
+
+
+// let student = {}
+// student["name"] = "raja"
+// student["age"] = 27
+
+
+// student.name = "ehsan"
+// console.log(student)
+
+let student = {
+     name : "raja",
+    age : 24,
+    isAlive: false
+}
+
+// student.name = "ehsan"
+student["name"] = "ehsan"
+console.log(student)
+
+
+
+// You have 100 students list. Each dtudent has its 
+// name, age, class, and fathername
+// Among all those student fin out
+// how many have same age?
+// how many have same father name?
+//  You need to print the count of these two
