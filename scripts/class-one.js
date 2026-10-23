@@ -186,22 +186,22 @@
 // let firstName = "hura"
 // let firstName2 = 'raja'
 // let firstName3 = `raja`
-let firstName = `raja`;
-let lasttName = `ehsan`;
+// let firstName = `raja`;
+// let lasttName = `ehsan`;
 
-// let fullName = firstName + lasttName
-let fullName = `${firstName} ${lasttName}`;
+// // let fullName = firstName + lasttName
+// let fullName = `${firstName} ${lasttName}`;
 
-console.log(typeof firstName, typeof firstName2, typeof firstName3);
+// console.log(typeof firstName, typeof firstName2, typeof firstName3);
 
-// console.log(firstName + lasttName)
-console.log(fullName);
+// // console.log(firstName + lasttName)
+// console.log(fullName);
 
-let age = 27; // integer
-let price = 110.01; // decimal
+// let age = 27; // integer
+// let price = 110.01; // decimal
 
-console.log(age, price);
-console.log(typeof age, typeof price);
+// console.log(age, price);
+// console.log(typeof age, typeof price);
 
 // Boolen (Bool) True / False
 
@@ -533,52 +533,190 @@ let students = [
 // let stud = students[0]
 // // console.log(stud.name, typeof stud)
 
-
-
 // // Destructuring
 // const {name, age, class} = stud
 
+// let student = {}
+// student["name"] = "raja"
+// student["age"] = 27
 
-// Structuring
+// student.name = "ehsan"
+// console.log(student)
+
 // let student = {
 //     name : "raja",
 //     age : 24,
 //     isAlive: false
 // }
 
-// // Destructuring
-// // LHS = RHS
-
-// let {name, age, isAlive} = student
-// name = "ehsan"
-
+// // student.name = "ehsan"
+// student["name"] = "ehsan"
 // console.log(student)
 
-
-
-// let student = {}
-// student["name"] = "raja"
-// student["age"] = 27
-
-
-// student.name = "ehsan"
-// console.log(student)
-
-let student = {
-     name : "raja",
-    age : 24,
-    isAlive: false
-}
-
-// student.name = "ehsan"
-student["name"] = "ehsan"
-console.log(student)
-
-
-
-// You have 100 students list. Each dtudent has its 
+// You have 100 students list. Each dtudent has its
 // name, age, class, and fathername
 // Among all those student fin out
 // how many have same age?
 // how many have same father name?
 //  You need to print the count of these two
+
+// Array -> list of items -> typeof Array (object)
+// Object -> a variable that can simply hold multiple properties
+
+// 1st half -> related to JS
+// 2nd half -> Topics
+
+// Array of objects
+// let array = [
+//   // Oth index
+//   {
+//     name: "raja",
+//     age: 24,
+//   },
+//   // 1st index
+//   {
+//     name: "ehsan",
+//     age: 24,
+//   },
+//   // length -> 2
+// ];
+// explicity at that index
+// array[2] = {
+//   name:  "farrukh",
+//   age: 43
+// }
+
+// Push
+// array.push({
+//   name: "farrukh",
+//   age : 43
+// })
+
+//Insert at 1 index
+// array.splice(
+//   1,
+//   1,
+//   {
+//   name: "farrukh",
+//   age: 43,
+//   },
+//   {
+//     name : "sufiyan",
+//     age : 18
+//   }
+// );
+
+// console.log("Array  => ", array);
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9, 10];
+
+// Mugay yay krna hay k aik combine array
+// bananhay by using above two array
+
+//
+// let newBasketCount = arr1.length + arr2.length // 10
+// let newBucket = new Array(10)
+// // let newBucket = []
+
+// // Iterate over buck 1 -> new
+
+// for(let  i = 0; i <= arr1.length-1 ; i++){
+//   console.log(`At index ${i} = ${arr1[i]}`)
+//   // newBucket.push(arr1[i])
+//   newBucket[i] = arr1[i]
+// }
+
+// console.log("After bucket 1 insertion =>",newBucket)
+// // Iterate over buck 2 -> new
+// for(let i = 0; i <= arr2.length-1 ; i++) {
+//   newBucket[i+arr1.length] = arr2[i]
+// }
+// console.log("After bucket 2 insertion =>",newBucket)
+
+// Array concatenation
+// let newBucket = arr1.concat(arr2)
+// console.log(newBucket)
+
+// using spread operator
+// let newBucket = [...arr1, ...arr2];
+// console.log(newBucket)
+
+// let newBucket  =  arr1.concat(2,3,5)
+// console.log(newBucket)
+
+
+// arr1.pop() // delete from very last
+// arr1.shift() // delete from very first
+// let arr1 = [1, 2, 3, 4, 5]; 
+
+
+/**
+ * param1 startIndex
+ * param2 deleteCount (Optional)
+ */
+// arr1.splice(2, 1) // [1,2,4,5]
+
+// // 4 delete
+// arr1.splice(2, 1) // [1,2,5]
+
+// using delete keyword
+
+// delete arr1[2]
+
+
+// console.log(arr1)
+
+// Bucket of students hain jis ma sy mughay filter ketnay hain student
+// jo class 10 ma parhtay hain
+
+
+// students count ?? 5
+// Data format ?? name(string), age(number), class(number)
+
+// approach (Decision making)
+// if else
+  // iterative
+
+
+let dataSet = [
+  {
+    name: "raja1",
+    age : 27,
+    class: 12
+  },
+  {
+    name: "raja1",
+    age : 27,
+    class: 11
+  },
+  {
+    name: "raja3",
+    age : 27,
+    class: 10
+  },
+  {
+    name: "raja4",
+    age : 27,
+    class: 9
+  },
+  {
+    name: "raja5",
+    age : 27,
+    class: 10
+  },
+]
+
+
+// let class10Studs = []
+
+// for(let i = 0 ; i <= dataSet.length-1 ; i++) {
+//   let data = dataSet[i]
+//   console.log(data)
+//   if(data.class == 10) {
+//     class10Studs.push(data)
+//   }
+// }
+
+
+// console.log(class10Studs)
