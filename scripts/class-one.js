@@ -645,11 +645,9 @@ let students = [
 // let newBucket  =  arr1.concat(2,3,5)
 // console.log(newBucket)
 
-
 // arr1.pop() // delete from very last
 // arr1.shift() // delete from very first
-// let arr1 = [1, 2, 3, 4, 5]; 
-
+// let arr1 = [1, 2, 3, 4, 5];
 
 /**
  * param1 startIndex
@@ -664,49 +662,45 @@ let students = [
 
 // delete arr1[2]
 
-
 // console.log(arr1)
 
 // Bucket of students hain jis ma sy mughay filter ketnay hain student
 // jo class 10 ma parhtay hain
-
 
 // students count ?? 5
 // Data format ?? name(string), age(number), class(number)
 
 // approach (Decision making)
 // if else
-  // iterative
+// iterative
 
-
-let dataSet = [
-  {
-    name: "raja1",
-    age : 27,
-    class: 12
-  },
-  {
-    name: "raja1",
-    age : 27,
-    class: 11
-  },
-  {
-    name: "raja3",
-    age : 27,
-    class: 10
-  },
-  {
-    name: "raja4",
-    age : 27,
-    class: 9
-  },
-  {
-    name: "raja5",
-    age : 27,
-    class: 10
-  },
-]
-
+// let dataSet = [
+//   {
+//     name: "raja1",
+//     age : 27,
+//     class: 12
+//   },
+//   {
+//     name: "raja1",
+//     age : 27,
+//     class: 11
+//   },
+//   {
+//     name: "raja3",
+//     age : 27,
+//     class: 10
+//   },
+//   {
+//     name: "raja4",
+//     age : 27,
+//     class: 9
+//   },
+//   {
+//     name: "raja5",
+//     age : 27,
+//     class: 10
+//   },
+// ]
 
 // let class10Studs = []
 
@@ -718,5 +712,67 @@ let dataSet = [
 //   }
 // }
 
-
 // console.log(class10Studs)
+
+// Proble statement
+// You are given with the list of items and each item may be repeated.
+// Your task is to degregate the item into their respective groups
+
+let dataSet = [1, 2, 3, 4, 1, 2, 3, 4];
+
+let sortedArray = dataSet.sort();
+// [1,1,2,2,3,3,4,4]
+let segregated = []
+let start = 0;
+
+for (let end = 1; end <= sortedArray.length; end++) {
+  // start = 0 end = 2
+  // 1 !== 2
+  console.log("INDEXES", start, end)
+  console.log(`DATA at ${end} itr`, sortedArray[start], sortedArray[end]);
+  if(sortedArray[start] !== sortedArray[end]) {
+    console.log(sortedArray.slice(start, end))
+    let slice = sortedArray.slice(start, end)
+    segregated.push(slice)
+    start = end
+  }
+  
+  
+}
+
+console.log("SEGREGATED", segregated)
+
+
+// [1,2,3,4]   -> 6
+// [1,2,3,4]   -> 5
+// [1,3,4,6,7]  -> 2
+// You are givent with the list of numbers. The list length can be N number.
+// ? You need to insert a new number following the sequence
+
+// let dataSet2 = [1,3,5,7];
+
+// let value = 6;
+
+// for(let i = 0; i < dataSet2.length; i++){
+//   if(dataSet2[i] >= value){
+    
+//     dataSet2.splice(i, 0, value)
+//     break
+//   }
+// }
+// console.log(dataSet2)
+
+
+// probability & stats
+
+// no of stairs  koi N number eg 4
+// given the fact that I can only cros Max 3
+// stairs
+
+// Hint: nCr , nPr
+
+
+// 1st => [1,1,1,1]
+// 2nd => [2,3]
+// 3rd => [2,1,1]
+// 4th => [3,1]
