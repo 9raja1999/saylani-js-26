@@ -100,24 +100,161 @@
 
 
 
-let list = [1,2,3,4]
-let total = 3
+// let list = [1,2,3,4]
+// let total = 3
 
-// sum = va1 + var2
+// // sum = va1 + var2
 
-for(let start = 0; start <= list.length-1 ; start++) {
-    console.log(`List item at ${start} =  ${list[start]}`)
+// for(let start = 0; start <= list.length-1 ; start++) {
+//     console.log(`List item at ${start} =  ${list[start]}`)
 
-    for(let inner = start+1 ; inner <= list.length-1 ; inner++) {
-        console.log("ITEMS" ,  list[start], list[inner])
+//     for(let inner = start+1 ; inner <= list.length-1 ; inner++) {
+//         console.log("ITEMS" ,  list[start], list[inner])
         
     
-    }
+//     }
 
 
 
-}
+// }
 
+// Array 
+// Methods (push, pop, splice, length, filter, find)
+// list of items (int, strin, bool)
+
+// functions
+// Pass by value
+// Pass by reference
+
+let list = [1,2,3] // array numbers
+// let list_one = ["1","2","3"] // array numbers
+// let list_three = [true, false] // array numbers
+
+
+let item_one = list[0] // item_one = 1
+let item_two = list[1] // 
+
+
+
+console.log("ITEM ONE",item_one)
+
+
+// How may students in my class list their names plus theoir father name
+// let students = ["name1", "name2"]
+
+
+// let student1 = {
+//     // pairs {key: value}
+//     name: "raja",
+//     fatherName:  "razzak",
+//     age: 27,
+// }
+
+// console.log(student1.name)
+// console.log(student1.fatherName)
+
+
+// console.log(student1["age"])
+// console.log(student1["fatherName"])
+
+
+// let students = [
+//     {
+//         name: "raja",
+//         age : 27
+//     },
+//     {
+//         name: "raja",
+//         age : 27
+//     },
+//     {
+//         name: "raja",
+//         age : 27
+//     },
+//     {
+//         name: "raja",
+//         age : 27
+//     },
+// ]
+
+// let students_one = students[0] // object
+// let students_one_name = students[0].name // "raja"
+
+// console.log(students[0].name)
+
+// let numbers = [1,2,7,3,4,5,9] // unsorted
+// let sorted = numbers.sort()
+
+// console.log(numbers)
+// console.log(sorted)
+
+
+// let alphabets = ["a", "c" , "b"]
+
+
+// console.log(alphabets.sort())
+
+
+// let numbers= [1,2,4,3,5]
+
+
+// console.log(numbers.reverse())
+
+// let alphabets = ["a", "c" , "b"]
+// console.log(alphabets.reverse())
+
+// let para = "   I  i   "
+// let paralength = para.length
+// // let trimmedLeadingPara = para.trimStart()
+// let trimmedLeadingPara = para.trimEnd()
+// // let trimmedPara = para.trim()
+
+// console.log(paralength)
+// console.log(trimmedLeadingPara)
+
+
+let para = "I am working hard, I am a good person, I am a polite person"
+
+// console.log(para.charAt(1))
+console.log(para.split(","))
+
+// 2d - Multidimension array
+let dataset  = [
+    [1,0,1,0,1],
+    [1,0,1,0,0],
+    [0,1,0,0,1],
+    [0,0,0,0,1],
+    [0,0,0,0,1],
+]
+
+
+console.log(dataset[4][3])
+
+
+
+// Chopstic ko toor dunga
+// play and pause
+// ai aik kr k khao
+// one that finishes early 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
