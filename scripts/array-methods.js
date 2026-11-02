@@ -47,7 +47,6 @@
 //     alert("found")
 // }
 
-
 // filter
 // // find those elements in array which are equal to 5
 // let students = [10, 11, 12, 11, 12, 8, 11];
@@ -60,8 +59,6 @@
 // let result = students.filter( (val) => val < aboveten )
 // console.log(result)
 
-
-
 // indexOf
 
 // let numbers = [9,1,2,3,4,5,6,7,8,9,10]
@@ -73,32 +70,28 @@
 // Problem Statement
 
 /***
- * 
+ *
  * Ex1:
  *  0 1 2 3
  * [1,2,3,4]
  * total = 3
  * result = [2,3]
- * 
+ *
  * Ex2:
  *  0 1 2 3 4 5 6
  * [1,2,3,4,5,6,7]
  * total = 10
- * result = 
- * 
+ * result =
+ *
  */
-
-
 
 // You are given with the list of numbers that can be of any
 // length given that each number in this array is a one
-//  digit 
+//  digit
 // number. Another variable is there of total that will
 // be a number. What you will need to do is k find the
 //  elements
 // in list whose indexes sum is equal to the total
-
-
 
 // let list = [1,2,3,4]
 // let total = 3
@@ -110,15 +103,12 @@
 
 //     for(let inner = start+1 ; inner <= list.length-1 ; inner++) {
 //         console.log("ITEMS" ,  list[start], list[inner])
-        
-    
+
 //     }
-
-
 
 // }
 
-// Array 
+// Array
 // Methods (push, pop, splice, length, filter, find)
 // list of items (int, strin, bool)
 
@@ -126,22 +116,17 @@
 // Pass by value
 // Pass by reference
 
-let list = [1,2,3] // array numbers
+let list = [1, 2, 3]; // array numbers
 // let list_one = ["1","2","3"] // array numbers
 // let list_three = [true, false] // array numbers
 
+let item_one = list[0]; // item_one = 1
+let item_two = list[1]; //
 
-let item_one = list[0] // item_one = 1
-let item_two = list[1] // 
-
-
-
-console.log("ITEM ONE",item_one)
-
+console.log("ITEM ONE", item_one);
 
 // How may students in my class list their names plus theoir father name
 // let students = ["name1", "name2"]
-
 
 // let student1 = {
 //     // pairs {key: value}
@@ -153,10 +138,8 @@ console.log("ITEM ONE",item_one)
 // console.log(student1.name)
 // console.log(student1.fatherName)
 
-
 // console.log(student1["age"])
 // console.log(student1["fatherName"])
-
 
 // let students = [
 //     {
@@ -188,15 +171,11 @@ console.log("ITEM ONE",item_one)
 // console.log(numbers)
 // console.log(sorted)
 
-
 // let alphabets = ["a", "c" , "b"]
-
 
 // console.log(alphabets.sort())
 
-
 // let numbers= [1,2,4,3,5]
-
 
 // console.log(numbers.reverse())
 
@@ -212,49 +191,170 @@ console.log("ITEM ONE",item_one)
 // console.log(paralength)
 // console.log(trimmedLeadingPara)
 
-
-let para = "I am working hard, I am a good person, I am a polite person"
+let para = "I am working hard, I am a good person, I am a polite person";
 
 // console.log(para.charAt(1))
-console.log(para.split(","))
+console.log(para.split(","));
 
 // 2d - Multidimension array
-let dataset  = [
-    [1,0,1,0,1],
-    [1,0,1,0,0],
-    [0,1,0,0,1],
-    [0,0,0,0,1],
-    [0,0,0,0,1],
-]
+let dataset = [
+  [1, 0, 1, 0, 1],
+  [1, 0, 1, 0, 0],
+  [0, 1, 0, 0, 1],
+  [0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 1],
+];
 
-
-console.log(dataset[4][3])
-
-
+console.log(dataset[4][3]);
 
 // Chopstic ko toor dunga
 // play and pause
 // ai aik kr k khao
-// one that finishes early 
+// one that finishes early
+
+// Array methods
+
+// let array = [1,2,3];
+
+// array.pop() // Remove last
+
+// array.shift() // Remove first
+
+// array.push(4)
+
+// array.unshift(0)
+
+// console.log(array)
+
+// let company = {
+//     name : "avenlo",
+//     headCount : 5,
+//     industry : "software",
+//     address : "--------",
+//     establishedYear : 2026,
+//     foundingMember  : {
+//         name : "raja ehsan",
+//         qualification: "MS(DS)",
+//     }
+// }
+// let companies = [company]
+
+// console.log(company.headCount)
+// console.log(company.foundingMember.name)
+// console.log(company["headCount"])
+// console.log(company["foundingMember"]["name"])
+// console.log(headCount.company)
+
+// let company = {
+//     name : "avenlo",
+//     headCount : 5,
+//     industry : "software",
+//     address : "--------",
+//     establishedYear : 2026,
+//     foundingMember  : {
+//         name : "raja ehsan",
+//         qualification: "MS(DS)",
+//     }
+// }
+
+// let keys = Object.keys(company)
+
+// let entries = Object.entries(company)
+
+// console.log(keys)
+// console.log(entries)
+
+// for loop
+// using while
+// do while
+
+// initialization
+// condition
+// counter
+
+// initilization
+// let count = 0;
+// while(
+//     // CONDITION
+//     count <= 5
+// ){
+//     console.log("Hi", count)
+
+//     // COUNTER
+//     count++
+// }
+
+// console.log("Hi Out", count)
+
+// Find an element in an array using
+// while loop
+
+// let data = [1,2,3,4,5,6,7,8,9,10]
+// let found = false
+
+// while(found == false
+//     && data.length > 0
+// ){
+//     console.log("Hi")
+//     if(data[0] == 11) {
+//         found = true
+//     }else {
+//         data.shift()
+//     }
+
+// }
+// console.log(found)
+
+// print the factorial of 5
+// 5!. 71!
+
+// n! = n (n-1)(n-2)(n-3) .... n=1
+// 7! = 7(6)(5)(4)(3)(2)(1)
+
+// 5! = 5*4*3*2*1 =
+
+// let factorial = 2;
+// let result = 1
+
+// while(factorial >= 1) {
+//     result = result * factorial
+//     factorial--
+// }
+
+// console.log(result , "FAC")
+
+// Print even numbers toll 20 using while
+
+// let number = 20;
+
+// while(
+//     number >= 1
+// ) {
+//     if(number % 2 == 0) {
+//         console.log(`${number} is even`)
+//     }else {
+//         console.log(`${number} is odd`)
+//     }
+//     number--
+// }
+
+//  Table print of any number till 12
+// let number = 3;
+// let count = 1;
+
+// while (count <= 12) {
+//     console.log(`${number} * ${count} = ${number * count}`);
+    
+//     count++;
+// }
 
 
 
+// Insert the element at its right place note the element 
+// are all numbers
+let data = [1,2,3,4,6]
+let insertable = 5;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
